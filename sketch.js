@@ -7,7 +7,7 @@ var ground,ball;
 var binImg,bin;
 
 function preload(){
-    binImg = loadImage("Images/dustbingreen.png");
+    binImg = loadImage("dustbingreen.png");
 }
 function setup(){
     var canvas = createCanvas(1200,600);
@@ -29,8 +29,6 @@ function setup(){
 function draw(){
     background(0);
     Engine.update(engine);
-
-    //text(mouseX+","+mouseY,200,200);
 
     
     ground.display();
